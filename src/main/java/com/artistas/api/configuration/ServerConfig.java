@@ -1,4 +1,4 @@
-package configuration;
+package com.artistas.api.configuration;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;
