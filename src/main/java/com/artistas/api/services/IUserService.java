@@ -4,4 +4,5 @@ import com.artistas.api.models.UserModel;
 
 public interface IUserService {
 	public UserModel findByUserId(Long userId);
+	public UserModel saveUser(UserModel user);
 }

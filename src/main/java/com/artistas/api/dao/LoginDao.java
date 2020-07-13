@@ -8,4 +8,5 @@ import com.artistas.api.models.LoginModel;
 
 public interface LoginDao extends CrudRepository<LoginModel, Long> {
 	public Optional<LoginModel> findByLoginId(Long loginId);
+	public Optional<LoginModel> findByUsuario(String usuario);
 }

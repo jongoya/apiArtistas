@@ -14,12 +14,11 @@ public class LoginModel implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long loginId;
-	private String ususario;
+	private String usuario;
 	private String password;
 	private String clave;
 	private String token;
 	private long userId;
-	private boolean active;
 	
 	public LoginModel() {
 		super();
@@ -33,12 +32,12 @@ public class LoginModel implements Serializable {
 		this.loginId = loginId;
 	}
 
-	public String getUsusario() {
-		return ususario;
+	public String getUsuario() {
+		return usuario;
 	}
 
-	public void setUsusario(String ususario) {
-		this.ususario = ususario;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 
 	public String getPassword() {
@@ -71,14 +70,6 @@ public class LoginModel implements Serializable {
 
 	public void setUserId(long userId) {
 		this.userId = userId;
-	}
-	
-	public boolean isActive() {
-		return active;
-	}
-
-	public void setActive(boolean active) {
-		this.active = active;
 	}
 
 	private static final long serialVersionUID = 1L;

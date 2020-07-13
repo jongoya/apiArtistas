@@ -17,4 +17,14 @@ public class LoginServiceImpl implements ILoginService {
 		return (LoginModel) loginDao.findAll();
 	}
 
+	@Override
+	public LoginModel findByUsuario(String usuario) {
+		return loginDao.findByUsuario(usuario).orElse(null);
+	}
+
+	@Override
+	public LoginModel saveLogin(LoginModel login) {
+		return loginDao.save(login);
+	}
+
 }

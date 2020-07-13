@@ -17,4 +17,9 @@ public class UserServiceImpl implements IUserService {
 		return userDao.findByUserId(userId).orElse(null);
 	}
 
+	@Override
+	public UserModel saveUser(UserModel user) {
+		return userDao.save(user);
+	}
+
 }

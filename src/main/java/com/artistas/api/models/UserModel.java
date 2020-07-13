@@ -21,7 +21,6 @@ public class UserModel implements Serializable {
     private int edad;
     private long fecha;
     private String correo;
-    private String pais;
     private String direccion;
     private Long rol;
     private String nombreArtista;
@@ -80,14 +79,6 @@ public class UserModel implements Serializable {
 
 	public void setCorreo(String correo) {
 		this.correo = correo;
-	}
-
-	public String getPais() {
-		return pais;
-	}
-
-	public void setPais(String pais) {
-		this.pais = pais;
 	}
 
 	public String getDireccion() {
